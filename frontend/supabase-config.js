@@ -5,6 +5,6 @@
 const SUPABASE_URL = "https://vfefipwxeqefdtspzowk.supabase.co";
 const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_rzh5gxGVFjHqZbLsz1isvw_cLE6qEB9";
 
-const STAFF_EMAIL = "staff@ricksproshop.local"; // not a secret — just the shared staff account's identifier; the passcode staff type in-app is the actual password
+const STAFF_EMAIL = "lucashayesmiller@gmail.com"; // not a secret — just the shared staff account's identifier; the passcode staff type in-app is the actual password
 
 const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
