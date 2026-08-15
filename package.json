@@ -1,0 +1,9 @@
+{
+  "name": "rps-rentals",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Rick's Pro Shop rental management app — static frontend talking directly to Supabase (publishable key + RLS), with one Netlify Function for Shopify sync.",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4"
+  }
+}

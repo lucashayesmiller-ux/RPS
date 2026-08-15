@@ -1,0 +1,21 @@
+[build]
+  publish = "frontend"
+  functions = "netlify/functions"
+  command = "npm install"
+
+[functions]
+  node_bundler = "esbuild"
+
+# Friendly path for manual sync — /api/shopify-sync instead of the full
+# /.netlify/functions/shopify-sync. The webhook is registered directly
+# with Shopify at /.netlify/functions/shopify-webhook (see that file's
+# header comment for why — one less layer for Shopify's retries to hit).
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
